@@ -1,0 +1,5 @@
+C:\Hobby\PrimeTime\PrimeTimeLibrary\obj\Release\ResolveAssemblyReference.cache
+C:\Hobby\PrimeTime\PrimeTimeLibrary\bin\Release\PrimeTimeLibrary.dll
+C:\Hobby\PrimeTime\PrimeTimeLibrary\bin\Release\PrimeTimeLibrary.pdb
+C:\Hobby\PrimeTime\PrimeTimeLibrary\obj\Release\PrimeTimeLibrary.dll
+C:\Hobby\PrimeTime\PrimeTimeLibrary\obj\Release\PrimeTimeLibrary.pdb
