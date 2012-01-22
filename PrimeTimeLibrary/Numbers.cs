@@ -5,11 +5,11 @@ using System.Text;
 
 namespace PrimeTime
 {
-    class Numbers
+    public class Numbers
     {
-        public static IEnumerable<long> Range(long start, long length)
+        public static IEnumerable<long> Range(long start, long end)
         {
-            for (long l = start; l < length; l++)
+            for (long l = start; l <= end; l++)
                 yield return l;
         }
     }

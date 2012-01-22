@@ -5,7 +5,7 @@ using System.Text;
 
 namespace PrimeTime
 {
-    class SieveOfEratosthenes
+    public class SieveOfEratosthenes
     {
         long _limit;
 

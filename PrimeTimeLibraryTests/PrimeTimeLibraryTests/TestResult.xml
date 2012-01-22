@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Hobby\PrimeTime\PrimeTimeLibraryTests\PrimeTimeLibraryTests\PrimeTimeLibraryTests.csproj" total="18" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2012-01-22" time="15:14:20">
+  <environment nunit-version="2.5.10.11092" clr-version="2.0.50727.4963" os-version="Microsoft Windows NT 6.1.7600.0" platform="Win32NT" cwd="C:\Program Files (x86)\NUnit 2.5.10\bin\net-2.0" machine-name="PREETS-HP" user="Preets" user-domain="Preets-HP" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Project" name="C:\Hobby\PrimeTime\PrimeTimeLibraryTests\PrimeTimeLibraryTests\PrimeTimeLibraryTests.csproj" executed="True" result="Success" success="True" time="0.078" asserts="0">
+    <results>
+      <test-suite type="Assembly" name="C:\Hobby\PrimeTime\PrimeTimeLibraryTests\PrimeTimeLibraryTests\bin\Debug\PrimeTimeLibraryTests.dll" executed="True" result="Success" success="True" time="0.077" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="PrimeTimeLibraryTests" executed="True" result="Success" success="True" time="0.077" asserts="0">
+            <results>
+              <test-suite type="TestFixture" name="NumbersTest" executed="True" result="Success" success="True" time="0.006" asserts="0">
+                <results>
+                  <test-case name="PrimeTimeLibraryTests.NumbersTest.ShouldReturnElementsBetween3and6Inclusive" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                  <test-case name="PrimeTimeLibraryTests.NumbersTest.ShouldReturnFirst10IntegersAsLongs" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="PrimeTimeServiceTest" executed="True" result="Success" success="True" time="0.031" asserts="0">
+                <results>
+                  <test-case name="PrimeTimeLibraryTests.PrimeTimeServiceTest.ShouldFind10thPrime" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                  <test-case name="PrimeTimeLibraryTests.PrimeTimeServiceTest.ShouldFind1stPrime" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                  <test-case name="PrimeTimeLibraryTests.PrimeTimeServiceTest.ShouldFindLargestPrimeFactorOf1" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                  <test-case name="PrimeTimeLibraryTests.PrimeTimeServiceTest.ShouldFindLargestPrimeFactorOf2" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                  <test-case name="PrimeTimeLibraryTests.PrimeTimeServiceTest.ShouldFindLargestPrimeFactorOf29" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                  <test-case name="PrimeTimeLibraryTests.PrimeTimeServiceTest.ShouldFindLargestPrimeFactorOf51" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                  <test-case name="PrimeTimeLibraryTests.PrimeTimeServiceTest.ShouldFindSumOfAllPrimesLessThan10" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                  <test-case name="PrimeTimeLibraryTests.PrimeTimeServiceTest.ShouldFindSumOfAllPrimesLessThan17" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                  <test-case name="PrimeTimeLibraryTests.PrimeTimeServiceTest.ShouldFindSumOfAllPrimesLessThan2" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="SieveOfErathosthenesTest" executed="True" result="Success" success="True" time="0.017" asserts="0">
+                <results>
+                  <test-case name="PrimeTimeLibraryTests.SieveOfErathosthenesTest.ShouldReturn541AsHundredthPrime" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                  <test-case name="PrimeTimeLibraryTests.SieveOfErathosthenesTest.ShouldReturnAllPrimesUpToOne" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                  <test-case name="PrimeTimeLibraryTests.SieveOfErathosthenesTest.ShouldReturnAllPrimesUpToTen" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                  <test-case name="PrimeTimeLibraryTests.SieveOfErathosthenesTest.ShouldReturnAllPrimesUpToTwo" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                  <test-case name="PrimeTimeLibraryTests.SieveOfErathosthenesTest.ShouldReturnAllPrimesUpToZero" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="TrialDivisionByPrimesTest" executed="True" result="Success" success="True" time="0.005" asserts="0">
+                <results>
+                  <test-case name="PrimeTimeLibraryTests.TrialDivisionByPrimesTest.ShouldHave2AsFirstPrime" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                  <test-case name="PrimeTimeLibraryTests.TrialDivisionByPrimesTest.ShouldHave541AsHundredthPrime" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

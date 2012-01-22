@@ -5,7 +5,7 @@ using System.Text;
 
 namespace PrimeTime
 {
-    class PrimeTime
+    public class PrimeTimeService
     {
         public long FindNthPrime(int n)
         {
@@ -15,12 +15,14 @@ namespace PrimeTime
 
         public long SumOfAllPrimesLessThan(long limit)
         {
-            var soe = new SieveOfEratosthenes(limit);
+            var soe = new SieveOfEratosthenes(limit-1);
             return soe.Primes.Sum();
         }
 
         public long LargestPrimeFactorOf(long number)
         {
+            if (number <= 1) return 0;
+
             var td = new TrialDivisionByPrimes();
 
             long largestPrimeFound = 0;

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="true">
+  <TopNode>[0-1000]C:\Hobby\PrimeTime\PrimeTimeLibraryTests\PrimeTimeLibraryTests\PrimeTimeLibraryTests.csproj</TopNode>
+  <SelectedNode>[0-1000]C:\Hobby\PrimeTime\PrimeTimeLibraryTests\PrimeTimeLibraryTests\PrimeTimeLibraryTests.csproj</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1000]C:\Hobby\PrimeTime\PrimeTimeLibraryTests\PrimeTimeLibraryTests\PrimeTimeLibraryTests.csproj" Expanded="true" />
+    <Node UniqueName="[0-1003]C:\Hobby\PrimeTime\PrimeTimeLibraryTests\PrimeTimeLibraryTests\bin\Debug\PrimeTimeLibraryTests.dll" Expanded="true" />
+    <Node UniqueName="[0-1004]PrimeTimeLibraryTests" Expanded="true" />
+    <Node UniqueName="[0-1001]PrimeTimeLibraryTests.TrialDivisionByPrimesTest" Expanded="true" />
+  </Nodes>
+</VisualState>

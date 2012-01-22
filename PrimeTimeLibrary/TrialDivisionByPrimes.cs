@@ -13,7 +13,7 @@ namespace PrimeTime
     ///         greater than sqrt(number) that can completely divide the number, then its multiplication factor (say y = number / x) will 
     ///         have to be less than sqrt(number), which we would have already examined.
     /// </summary>
-    class TrialDivisionByPrimes
+    public class TrialDivisionByPrimes
     {
         List<long> _knownPrimes = new List<long>();
 
