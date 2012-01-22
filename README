@@ -6,5 +6,5 @@ Find primes using
 
 Common prime functions
 	-> Find prime number at location 'x'
-	-> Find the largest prime factor 'x'
+	-> Find the largest prime factor of 'x'
 	-> Find sum of all primes below 'x'
