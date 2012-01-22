@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual C# Express 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeTimeLibrary", "PrimeTimeLibrary.csproj", "{B131B099-96B4-4CBD-8960-ACBF77BFE520}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeTimeLibraryTests", "..\PrimeTimeLibraryTests\PrimeTimeLibraryTests\PrimeTimeLibraryTests.csproj", "{7D5F3B2F-9F56-4990-BBEB-9B774D44568C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeTimeLibraryTests", "..\PrimeTimeLibraryTests\PrimeTimeLibraryTests.csproj", "{7D5F3B2F-9F56-4990-BBEB-9B774D44568C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

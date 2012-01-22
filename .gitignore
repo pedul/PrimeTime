@@ -19,6 +19,7 @@ _UpgradeReport_Files/
 bin/
 obj/
 TestResults/
+TestResult.xml
 # Web publish log #
 ###################
 *.Publish.xml

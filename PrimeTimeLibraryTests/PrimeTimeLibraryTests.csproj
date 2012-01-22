@@ -51,7 +51,7 @@
     <Compile Include="TrialDivisionByPrimesTest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\PrimeTimeLibrary\PrimeTimeLibrary.csproj">
+    <ProjectReference Include="..\PrimeTimeLibrary\PrimeTimeLibrary.csproj">
       <Project>{B131B099-96B4-4CBD-8960-ACBF77BFE520}</Project>
       <Name>PrimeTimeLibrary</Name>
     </ProjectReference>
