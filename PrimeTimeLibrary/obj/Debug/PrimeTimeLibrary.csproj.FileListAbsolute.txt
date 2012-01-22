@@ -1,5 +1,0 @@
-C:\Hobby\PrimeTime\PrimeTimeLibrary\bin\Debug\PrimeTimeLibrary.dll
-C:\Hobby\PrimeTime\PrimeTimeLibrary\bin\Debug\PrimeTimeLibrary.pdb
-C:\Hobby\PrimeTime\PrimeTimeLibrary\obj\Debug\ResolveAssemblyReference.cache
-C:\Hobby\PrimeTime\PrimeTimeLibrary\obj\Debug\PrimeTimeLibrary.dll
-C:\Hobby\PrimeTime\PrimeTimeLibrary\obj\Debug\PrimeTimeLibrary.pdb
