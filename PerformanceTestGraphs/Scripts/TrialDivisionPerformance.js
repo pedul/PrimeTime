@@ -1,9 +1,15 @@
 ﻿/// <reference path="jquery-1.4.1-vsdoc.js" />
 
+var minLimit = 10000;
+var maxLimit = 100000;
+var increment = 10000;
 var trialDivisionValues = [];
 var sieveOfEraValues = [];
+var baseline = [];
 
 $(function () {
+    baseline.push([minLimit - increment, 0]);
+    baseline.push([maxLimit + increment, 100]);
     bindEvents();
 });
 
@@ -14,47 +20,51 @@ function bindEvents()
 }
 
 function trialDivision() {
-    var constraint = { Limit : 10000, Increment : 1000 };
-    PrimeTime.TrialDivision.DoWork(constraint, trialDivisionSuccess);
+    trialDivisionValues = [];
+
+    for (var i = minLimit; i <= maxLimit; i += increment) {
+        var constraint = { Limit : i, Increment : 0 };    
+        PrimeTime.TrialDivision.GetPerformance(constraint, trialDivisionSuccess);
+    }
 }
 
 function sieveOfErathosthenes() {
-    var constraint = { Limit : 10000, Increment : 1000 };
-    PrimeTime.SieveOfErathosthenes.DoWork(constraint, sieveOfErathosthenesSuccess);
+    sieveOfEraValues = [];
+
+    for (var i = minLimit; i <= maxLimit; i += increment) {
+        var constraint = { Limit: i, Increment: 0 };
+        PrimeTime.SieveOfErathosthenes.GetPerformance(constraint, sieveOfErathosthenesSuccess);
+    }
 }
 
-function trialDivisionSuccess(result) {    
-    trialDivisionValues = [];
-    updateGraph(result, trialDivisionValues);
+function trialDivisionSuccess(result) {
+    trialDivisionValues.push([result.RangeLimit, result.TimeTaken]);
+    plotGraph();
 }
 
 function sieveOfErathosthenesSuccess(result) {
-    sieveOfEraValues = [];
-    updateGraph(result, sieveOfEraValues);    
-}
-
-function updateGraph(result, container) {
-    for (var v in result) {
-        container.push([result[v].RangeLimit, result[v].TimeTaken]);
-    }
-
+    sieveOfEraValues.push([result.RangeLimit, result.TimeTaken]);
     plotGraph();
 }
 
 function plotGraph() {
     $.plot($("#placeholder"), [
+            {
+                data: baseline,
+                lines: { show: false },
+                points: { show: false }
+            },
             {                
-                yaxis: { min: 0, max: 50,  },
+                stack : 0,
                 data: trialDivisionValues,
                 label: "Trial Division",
-                lines: { show: true },
-                points: { show: true }
+                bars: { show: true, barWidth: 5000 }
             },
             {
+                stack: 0,
                 data: sieveOfEraValues,
                 label: "Sieve of Erathosthenes",
-                lines: { show: true },
-                points: { show: true }
-            },
+                bars: { show: true, barWidth: 5000 }
+            }
         ]);
 }

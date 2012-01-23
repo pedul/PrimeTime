@@ -21,6 +21,18 @@ namespace PerformanceTestGraphs
             return GetSieveOfErathosthenesPeformanceTimes(testConstraints.Limit, testConstraints.Increment);
         }
 
+        [OperationContract]
+        public Performance GetPerformance(TestConstraints testConstraints)
+        {
+            Stopwatch sw = new Stopwatch();            
+            var trialDivison = new SieveOfEratosthenes(testConstraints.Limit);
+
+            sw.Start();
+            long prime = trialDivison.Primes.ToList().Last();
+
+            return new Performance { RangeLimit = testConstraints.Limit, TimeTaken = sw.ElapsedMilliseconds };            
+        }
+
         List<Performance> GetSieveOfErathosthenesPeformanceTimes(long to, long increment)
         {
             var performanceValues = new List<Performance>();
