@@ -9,7 +9,7 @@ using NUnit.Framework;
 namespace PrimeTimeLibraryTests
 {
     [TestFixture]
-    class SieveOfErathosthenesTest
+    class SieveOfEratosthenesTest
     {
         [Test]
         public void ShouldReturnAllPrimesUpToZero()
