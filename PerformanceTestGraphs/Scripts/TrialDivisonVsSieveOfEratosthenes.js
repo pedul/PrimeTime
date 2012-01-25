@@ -15,15 +15,17 @@ $(function () {
 
 function testPerformance() {
 
-    somethingBadHappened = false;    
-    var minLimit = 100;
-    var increment = 100;
-    var maxLimit = parseInt(getLimitTextBox().val());
+    somethingBadHappened = false;
+
+    var maxLimit = parseInt(getLimitTextBox().val());    
 
     if (isNaN(maxLimit) || maxLimit < 0) {
         alert('Please enter a valid limit (whole number)');
         return false;
     }
+
+    var minLimit = (maxLimit <= 500) ? 5 : 100;
+    var increment = minLimit;
 
     trialDivisionValues = [];
     sieveOfEraValues = [];

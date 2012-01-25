@@ -16,13 +16,14 @@ namespace PerformanceTestGraphs.Services
     {
         [OperationContract]
         public Performance GetPerformance(TestConstraint testConstraints)
-        {
-            Stopwatch sw = new Stopwatch();
+        {            
             var soe = new PrimeTime.SieveOfEratosthenes(testConstraints.Limit);
 
+            Stopwatch sw = new Stopwatch();
             sw.Start();
+
             var primes = soe.Primes.ToList();
-            long timeTaken = sw.ElapsedMilliseconds;
+            long timeTaken = sw.ElapsedMilliseconds;            
 
             return new Performance
             {

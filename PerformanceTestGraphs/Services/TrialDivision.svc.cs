@@ -17,10 +17,10 @@ namespace PerformanceTestGraphs.Services
     {
         [OperationContract]
         public Performance GetPerformance(TestConstraint testConstraints)
-        {
-            Stopwatch sw = new Stopwatch();
+        {                        
             var trialDivison = new TrialDivisionByPrimes();
-
+            
+            Stopwatch sw = new Stopwatch();
             sw.Start();
 
             var primes = trialDivison.Primes.TakeWhile(p => p <= testConstraints.Limit).ToList();
